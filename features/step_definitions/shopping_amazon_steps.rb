@@ -2,8 +2,8 @@ Given(/^I am on amazon store page$/) do
   visit 'https://www.amazon.com/'
 end
 
-When(/^I search for "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+When(/^I search for "([^"]*)"$/) do |item|
+  fill_in('twotabsearchtextbox', with: item)  
 end
 
 When(/^I choose the first result item$/) do
