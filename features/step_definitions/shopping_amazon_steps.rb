@@ -12,9 +12,10 @@ When(/^I choose the first result item$/) do
 end
 
 When(/^I add this item on my shopping cart$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  # click_on(class: 'a-button-stack')
+  click_on(id:'add-to-cart-button')
 end
 
-Then(/^I shoul have '(\d+)' item on my shopping cart$/) do |arg1|
+Then(/^I should have '(\d+)' item on my shopping cart$/) do |arg1|
   pending # Write code here that turns the phrase above into concrete actions
 end
